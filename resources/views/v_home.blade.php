@@ -65,7 +65,8 @@
                                         <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                                             <div class="flex flex-row items-center gap-2">
                                                 <a href="/mahasiswa/{{ $mahasiswa->id }}" class="bg-blue-500 text-white rounded-lg w-10 aspect-square flex items-center justify-center"><i class="bi bi-pen-fill"></i></a>
-                                                <a href="/mahasiswa/1/delete" class="bg-red-500 text-white rounded-lg w-10 aspect-square flex items-center justify-center"><i class="bi bi-trash-fill"></i></a>
+                                                <!-- <a href="/mahasiswa/1/delete" class="bg-red-500 text-white rounded-lg w-10 aspect-square flex items-center justify-center"><i class="bi bi-trash-fill"></i></a> -->
+                                                <button onclick="if(confirm('Yakin ingin menghapus data ini?')){window.location = '/mahasiswa/{{ $mahasiswa->id }}/delete';}" class="bg-red-500 text-white rounded-lg w-10 aspect-square flex items-center justify-center"><i class="bi bi-trash-fill"></i></button>
                                             </div>
                                         </td>
                                     </tr>

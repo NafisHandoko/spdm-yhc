@@ -31,3 +31,4 @@ Route::post('/mahasiswa/add-post', [C_Mahasiswa::class, 'addPost'])->middleware(
 Route::get('/mahasiswa/{id}', [C_Mahasiswa::class, 'index'])->middleware('guest');
 Route::get('/mahasiswa/{id}/edit-view', [C_Mahasiswa::class, 'editView'])->middleware('guest');
 Route::post('/mahasiswa/{id}/edit-post', [C_Mahasiswa::class, 'editPost'])->middleware('guest');
+Route::get('/mahasiswa/{id}/delete', [C_Mahasiswa::class, 'delete'])->middleware('guest');

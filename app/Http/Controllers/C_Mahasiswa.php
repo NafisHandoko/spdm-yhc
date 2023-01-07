@@ -67,4 +67,13 @@ class C_Mahasiswa extends Controller
             return redirect()->intended('/mahasiswa/'.$id)->with('editFailed','Data Mahasiswa Gagal Diubah!');
         }
     }
+
+    public function delete($id){
+        $result = Mahasiswa::destroy($id);
+        if($result){
+            return redirect()->intended('/')->with('deleteSuccess','Data Mahasiswa Berhasil Dihapus!');
+        }else{
+            return redirect()->intended('/')->with('deleteFailed','Data Mahasiswa Gagal Dihapus!');
+        }
+    }
 }
