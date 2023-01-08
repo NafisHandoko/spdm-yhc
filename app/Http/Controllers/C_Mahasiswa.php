@@ -93,4 +93,22 @@ class C_Mahasiswa extends Controller
             'data' => $result
         ]);
     }
+
+    public function sortedSearch(Request $request){
+        $validatedData = $request->validate([
+            'search' => 'required',
+            'sortby' => 'required'
+        ]);
+
+        $nama_or_prodi = $validatedData['search'];
+
+        $result = Mahasiswa::where('nama','LIKE','%'.$nama_or_prodi.'%')
+                ->orWhere('prodi','LIKE','%'.$nama_or_prodi.'%')
+                ->orderBy($validatedData['sortby'],'desc')
+                ->get();
+
+        return view('v_sort_search', [
+            'data' => $result
+        ]);
+    }
 }

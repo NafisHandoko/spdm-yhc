@@ -33,3 +33,4 @@ Route::get('/mahasiswa/{id}/edit-view', [C_Mahasiswa::class, 'editView'])->middl
 Route::post('/mahasiswa/{id}/edit-post', [C_Mahasiswa::class, 'editPost'])->middleware('auth');
 Route::get('/mahasiswa/{id}/delete', [C_Mahasiswa::class, 'delete'])->middleware('auth');
 Route::post('/search', [C_Mahasiswa::class, 'search'])->middleware('auth');
+Route::post('/sort-search', [C_Mahasiswa::class, 'sortedSearch'])->middleware('auth');
