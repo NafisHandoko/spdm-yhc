@@ -76,4 +76,20 @@ class C_Mahasiswa extends Controller
             return redirect()->intended('/')->with('deleteFailed','Data Mahasiswa Gagal Dihapus!');
         }
     }
+
+    public function search(Request $request){
+        $validatedData = $request->validate([
+            'search' => 'required',
+        ]);
+
+        $nama_or_prodi = $validatedData['search'];
+
+        $result = Mahasiswa::where('nama','LIKE','%'.$nama_or_prodi.'%')
+                ->orWhere('prodi','LIKE','%'.$nama_or_prodi.'%')
+                ->get();
+
+        return view('v_search', [
+            'data' => $result
+        ]);
+    }
 }
