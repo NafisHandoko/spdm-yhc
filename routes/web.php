@@ -19,16 +19,16 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-// Route::get('/', [C_Home::class, 'index'])->middleware('auth');
-Route::get('/', [C_Home::class, 'index']);
+Route::get('/', [C_Home::class, 'index'])->middleware('auth');
+// Route::get('/', [C_Home::class, 'index']);
 
 Route::get('/login', [C_Auth::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [C_Auth::class, 'login']);
 Route::post('/logout', [C_Auth::class, 'logout']);
 
-Route::get('/mahasiswa/add-view', [C_Mahasiswa::class, 'addView'])->middleware('guest');
-Route::post('/mahasiswa/add-post', [C_Mahasiswa::class, 'addPost'])->middleware('guest');
-Route::get('/mahasiswa/{id}', [C_Mahasiswa::class, 'index'])->middleware('guest');
-Route::get('/mahasiswa/{id}/edit-view', [C_Mahasiswa::class, 'editView'])->middleware('guest');
-Route::post('/mahasiswa/{id}/edit-post', [C_Mahasiswa::class, 'editPost'])->middleware('guest');
-Route::get('/mahasiswa/{id}/delete', [C_Mahasiswa::class, 'delete'])->middleware('guest');
+Route::get('/mahasiswa/add-view', [C_Mahasiswa::class, 'addView'])->middleware('auth');
+Route::post('/mahasiswa/add-post', [C_Mahasiswa::class, 'addPost'])->middleware('auth');
+Route::get('/mahasiswa/{id}', [C_Mahasiswa::class, 'index'])->middleware('auth');
+Route::get('/mahasiswa/{id}/edit-view', [C_Mahasiswa::class, 'editView'])->middleware('auth');
+Route::post('/mahasiswa/{id}/edit-post', [C_Mahasiswa::class, 'editPost'])->middleware('auth');
+Route::get('/mahasiswa/{id}/delete', [C_Mahasiswa::class, 'delete'])->middleware('auth');
