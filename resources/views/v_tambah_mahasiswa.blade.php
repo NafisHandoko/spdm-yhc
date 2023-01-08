@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Mahasiswa</title>
-    <link rel="stylesheet" href="/css/global.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head>
-<body>
+@extends('layouts.main')
+
+@section('container')
     <form id="tambah-mahasiswa-form" class="container mx-auto"  action="/mahasiswa/add-post" method="post">
         @csrf
         <h1 class="font-bold text-2xl my-5">Tambah Mahasiswa</h1>
@@ -78,32 +68,4 @@
             <a href="/" class="rounded-lg bg-blue-500 px-4 py-2 text-white">OK</a>
         </div>
     </div>
-
-    <!-- <script>
-        $('#tambah-mahasiswa-form').submit(function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: "/mahasiswa/add-post",
-                type: 'POST',
-                data: new FormData(this),
-                contentType: false,
-                processData: false,
-                success: function (data) {
-                    $('#success-modal').show();
-                    console.log(data)
-                },
-                error: function (data) {
-                    $('#failed-modal').show();
-                    console.log(data)
-                    // console.log(data.responseJSON.errors);
-                    // let errorMsg = '';
-                    // $.each(data.responseJSON.errors, function (key, error) {
-                    //     errorMsg += error + '\n';
-                    // })
-                    // alert(errorMsg);
-                }
-            })
-        })
-    </script> -->
-</body>
-</html>
+@endsection

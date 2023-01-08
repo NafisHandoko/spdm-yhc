@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - SPDM</title>
-    <link rel="stylesheet" href="/css/global.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head>
-<body>
+@extends('layouts.main')
+
+@section('container')
     <a href="/mahasiswa/add-view" class="w-14 aspect-square flex items-center justify-center text-white bg-blue-400 shadow-lg hover:bg-blue-500 hover:shadow-blue-500 rounded-full fixed bottom-10 right-10 z-50 transition-all"><i class="bi bi-plus text-3xl font-bold"></i></a>
     <div class="container mx-auto flex flex-col">
-        <h1 class="text-center text-3xl font-bold my-8">Sistem Pengelolaan Data Mahasiswa</h1>
+        <!-- <h1 class="text-center text-3xl font-bold my-8">Sistem Pengelolaan Data Mahasiswa</h1> -->
         <div class="flex flex-col">
             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -108,5 +99,4 @@
             });
         </script>
     @endif
-</body>
-</html>
+@endsection

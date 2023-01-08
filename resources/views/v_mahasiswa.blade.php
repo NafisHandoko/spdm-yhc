@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
-    <link rel="stylesheet" href="/css/global.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('container')
     <div class="container mx-auto">
         <h1 class="font-bold text-2xl my-5">Data Mahasiswa</h1>
         <div class="flex flex-col gap-5">
@@ -41,7 +33,7 @@
                 <p>{{ $mahasiswa->domisili }}</p>
             </div>
         </div>
-        <div class="flex flex-row gap-2 mt-7">
+        <div class="flex flex-row gap-2 my-7">
             <a href="/" class="rounded-lg border border-blue-500 px-4 py-2">Kembali</a>
             <a href="/mahasiswa/{{ $mahasiswa->id }}/edit-view" class="text-white rounded-lg bg-blue-500 px-4 py-2">Ubah</a>
             <a href="/mahasiswa/{{ $mahasiswa->id }}/delete" class="text-white rounded-lg bg-red-500 px-4 py-2">Hapus</a>
@@ -62,5 +54,4 @@
             });
         </script>
     @endif
-</body>
-</html>
+@endsection
