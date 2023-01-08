@@ -89,6 +89,7 @@ class C_Mahasiswa extends Controller
                 ->get();
 
         return view('v_search', [
+            'search' => $validatedData['search'],
             'data' => $result
         ]);
     }

@@ -2,8 +2,35 @@
 
 @section('container')
     <div class="container mx-auto flex flex-col">
-        <h1 class="text-2xl font-bold my-8">Hasil Pencarian</h1>
-        <a href="/" class="rounded-lg border border-blue-500 px-4 py-2 self-start mb-3">Kembali</a>
+        <h1 class="text-2xl font-bold my-8">Hasil Pencarian : "{{ $search }}"</h1>
+        <div class="flex flex-row gap-2 items-stretch">
+            <a href="/" class="rounded-lg border border-blue-500 px-4 py-2 self-start mb-3">Kembali</a>
+            <div class="flex justify-center">
+                <div class="xl:w-96">
+                    <select class="form-select appearance-none
+                    block
+                    w-28
+                    px-3
+                    py-2
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded-lg
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-blue-500 focus:outline-none" aria-label="Default select example">
+                        <option selected>Sort By</option>
+                        <option value="1">Prodi</option>
+                        <option value="2">Semester</option>
+                        <option value="3">Kelas</option>
+                        <option value="4">Tahun Angkatan</option>
+                    </select>
+                </div>
+            </div>
+        </div>
         <div class="flex flex-col">
             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
