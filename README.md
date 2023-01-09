@@ -21,7 +21,7 @@
     Sistem Pengelolaan Data Mahasiswa untuk apply internship pada posisi Programmer di Yayasan Hasnur Centre
     <br />
     <br />
-    <a href="https://deboks-kas.000webhostapp.com/">View Demo</a>
+    <a href="https://spdm-yhc.000webhostapp.com/">View Demo</a>
     ·
     <a href="https://github.com/NafisHandoko/spdm-yhc/issues">Report Bug or Request Feature</a>
   </p>
@@ -114,16 +114,16 @@ Pengguna juga bisa mengurutkan hasil pencarian dengan prodi, semester, kelas, at
 * Ketik perintah dibawah ini secara berturut-turut di cmd : 
 ```
 git clone https://github.com/NafisHandoko/spdm-yhc.git
-cd deboks-kas
+cd spdm-yhc
 composer install
 copy .env.example .env
 ```
-* Buka file .env dan isikan `deboks_kas` pada `DB_DATABASE`
+* Buka file .env dan isikan `spdm-yhc` pada `DB_DATABASE`
 * Isi `DB_USERNAME` dan `DB_PASSWORD` sesuai konfigurasi XAMPP kalian, secara default `DB_USERNAME=root` dan `DB_PASSWORD` kosong
 * Nyalakan Apache dan MySQL di XAMPP
 * Buka browser dan ketikkan `http://localhost/phpmyadmin/` di address bar
-* Buat database dengan nama `deboks_kas`
-* Buka tab import lalu import file [deboks_kas.sql](https://github.com/NafisHandoko/spdm-yhc/blob/main/deboks_kas.sql)
+* Buat database dengan nama `spdm-yhc`
+* Buka tab import lalu import file [spdm-yhc.sql](https://github.com/NafisHandoko/spdm-yhc/blob/main/spdm-yhc.sql)
 * Kembali ke cmd/terminal lalu ketikkan `php artisan key:generate`
 * Terakhir ketik `php artisan serve` lalu buka browser
 
