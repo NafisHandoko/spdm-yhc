@@ -21,8 +21,6 @@
     Sistem Pengelolaan Data Mahasiswa untuk apply internship pada posisi Programmer di Yayasan Hasnur Centre
     <br />
     <br />
-    <a href="https://spdm-yhc.000webhostapp.com/">View Demo</a>
-    ·
     <a href="https://github.com/NafisHandoko/spdm-yhc/issues">Report Bug or Request Feature</a>
   </p>
 </div>
