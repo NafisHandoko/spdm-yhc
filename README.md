@@ -33,6 +33,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#author">Author</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -46,6 +47,19 @@
   </ol>
 </details>
 
+<!-- Author -->
+## Author
+Data diri calon peserta magang
+* Nama              : Nafis Arinda Rizky Putra Handoko
+* NIM               : 202410102065
+* Semester          : 5
+* Prodi             : Teknologi Informasi
+* Kampus            : Universitas Jember
+* Domisili          : Jombang, Jawa Timur
+* Nomor Whatsapp    : 081332079137
+* Email             : naffisioner@gmail.com
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -53,9 +67,6 @@
 Website ini adalah project yang dikerjakan atas dasar seleksi magang pada posisi Programmer di Yayasan Hasnur Centre. Dalam sistem ini, pengguna bisa melakukan CRUD data mahasiswa, melakukan pencarian data mahasiswa dan mengurutkannya berdasarkan prodi, semester, kelas, atau tahun angkatan.
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://github.com/NafisHandoko/spdm-yhc) -->
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -100,6 +111,7 @@ Terdapat juga fitur pencarian dimana pengguna bisa mencari data mahasiswa berdas
 Pengguna juga bisa mengurutkan hasil pencarian dengan prodi, semester, kelas, atau tahun angkatan
 [![Product Name Screen Shot][ss-search-sort]](https://github.com/NafisHandoko/spdm-yhc)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Installation
