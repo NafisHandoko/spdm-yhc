@@ -69,8 +69,36 @@ Here's a list of the technologies we used to build this project
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-## Fitur-fitur
+### Fitur-fitur
 
+Untuk menggunakan aplikasi ini, pengguna bisa melakukan login dengan kredensial berikut :
+* Username : admin
+* Password : admin123
+[![Product Name Screen Shot][ss-login]](https://github.com/NafisHandoko/spdm-yhc)
+
+Jika login gagal maka akan muncul pesan "Login failed"
+[![Product Name Screen Shot][ss-login-gagal]](https://github.com/NafisHandoko/spdm-yhc)
+
+Jika login berhasil maka akan diarahkan ke halaman utama
+[![Product Name Screen Shot][ss-home]](https://github.com/NafisHandoko/spdm-yhc)
+
+Pengguna bisa menambahkan data mahasiswa dengan menekan tombol biru di sebelah pojok kanan bawah, lalu akan diarahkan ke halaman Tambah Mahasiswa
+[![Product Name Screen Shot][ss-tambah-mahasiswa]](https://github.com/NafisHandoko/spdm-yhc)
+
+Pengguna juga bisa melihat detail mahasiswa dengan menekan tombol biru disamping tombol delete pada tabel data mahasiswa di halaman utama, lalu akan diarahkan ke halaman Detail Mahasiswa
+[![Product Name Screen Shot][ss-detail-mahasiswa]](https://github.com/NafisHandoko/spdm-yhc)
+
+Untuk mengedit data mahasiswa, pengguna bisa menekan tombol "Ubah" di halaman Detail Mahasiswa, lalu akan diarahkan ke halaman ke halaman Ubah Data Mahasiswa
+[![Product Name Screen Shot][ss-ubah-mahasiswa]](https://github.com/NafisHandoko/spdm-yhc)
+
+Untuk menghapus mahasiswa, pengguna bisa menekan tombol merah disamping tombol detail mahasiswa pada tabel data mahasiswa di halaman utama, lalu akan muncul jendela konfirmasi untuk menghapus data mahasiswa
+[![Product Name Screen Shot][ss-hapus]](https://github.com/NafisHandoko/spdm-yhc)
+
+Terdapat juga fitur pencarian dimana pengguna bisa mencari data mahasiswa berdasarkan nama atau prodi dengan menginputkan nama atau prodi yang dicari pada kolom input di sebelah atas halaman
+[![Product Name Screen Shot][ss-search]](https://github.com/NafisHandoko/spdm-yhc)
+
+Pengguna juga bisa mengurutkan hasil pencarian dengan prodi, semester, kelas, atau tahun angkatan
+[![Product Name Screen Shot][ss-search-sort]](https://github.com/NafisHandoko/spdm-yhc)
 
 
 <!-- USAGE EXAMPLES -->
@@ -162,4 +190,14 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/NafisHandoko/spdm-yhc/issues
 [license-shield]: https://img.shields.io/github/license/NafisHandoko/spdm-yhc.svg?style=for-the-badge
 [license-url]: https://github.com/NafisHandoko/spdm-yhc/blob/master/LICENSE
-[product-screenshot]: screenshot.png
+
+[ss-login]: documentation/fitur/login.png
+[ss-login-gagal]: documentation/fitur/login-gagal.jpg
+[ss-home]: documentation/fitur/home.png
+[ss-tambah-mahasiswa]: documentation/fitur/tambah-mahasiswa.png
+[ss-detail-mahasiswa]: documentation/fitur/detail-mahasiswa.png
+[ss-ubah-mahasiswa]: documentation/fitur/ubah-mahasiswa.png
+[ss-hapus]: documentation/fitur/hapus.jpg
+[ss-hapus-berhasil]: documentation/fitur/hapus-berhasil.jpg
+[ss-search]: documentation/fitur/search.png
+[ss-search-sort]: documentation/fitur/search-sort.png
