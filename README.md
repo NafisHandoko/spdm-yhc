@@ -60,7 +60,7 @@ Website ini adalah project yang dikerjakan atas dasar seleksi magang pada posisi
 
 ### Built With
 
-Here's a list of the technologies we used to build this project
+Framework/library/bahasa yang digunakan dalam membangun project ini :
 
 * [Laravel](https://laravel.com/)
 * [jQuery](https://jquery.com/)
