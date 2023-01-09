@@ -33,7 +33,6 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#author">Author</a></li>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -51,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-DeboksKas adalah suatu aplikasi yang bisa digunakan untuk melakukan pencatatan keuangan, karyawan, warung, maupun produk yang dijual oleh mitra(Bu Rina) selaku penjual keripik pelepah pisang di Kabupaten Jombang. Selain melakukan pencatatan, mitra juga bisa melihat performa keuangan setiap minggu atau setiap bulan dan melihat warung mana yang menjual produk paling laris.
+Website ini adalah project yang dikerjakan atas dasar seleksi magang pada posisi Programmer di Yayasan Hasnur Centre. Dalam sistem ini, pengguna bisa melakukan CRUD data mahasiswa, melakukan pencarian data mahasiswa dan mengurutkannya berdasarkan prodi, semester, kelas, atau tahun angkatan.
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://github.com/NafisHandoko/spdm-yhc) -->
 
@@ -69,6 +68,8 @@ Here's a list of the technologies we used to build this project
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+## Fitur-fitur
 
 
 
