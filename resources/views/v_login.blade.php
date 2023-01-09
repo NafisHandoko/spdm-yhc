@@ -16,6 +16,10 @@
                 <form action="/login" method="post" class="flex flex-col items-stretch text-white gap-y-4 max-w-full rounded-lg backdrop-blur-sm bg-[#D9D9D9]/30 p-10">
                     @csrf
                     <h1 class="text-center font-bold text-3xl">LOGIN</h1>
+                    <div class="text-center">
+                        <p>Username : admin</p>
+                        <p>Password : admin123</p>
+                    </div>
                     <!-- {error && <span class="text-sm text-center text-red-500 py-2 px-3 bg-red-200/75 border border-red-500 rounded-lg self-center">{error}</span>} -->
                     <input id="username" name="username" class="text-black rounded-lg bg-gray-200 placeholder-gray-500 py-3 px-4 focus:ring-blue-500 focus:border-blue-500" type="text" placeholder="Username" required/>
                     <input id="password" name="password" class="text-black rounded-lg bg-gray-200 placeholder-gray-500 py-3 px-4 focus:ring-blue-500 focus:border-blue-500" type="password" placeholder="Password" required/>
