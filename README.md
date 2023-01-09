@@ -47,18 +47,6 @@
   </ol>
 </details>
 
-<!-- Author -->
-## Author
-Here we are :
-
-* Nafis Arinda Rizky Putra Handoko (202410102065) - Project Manager
-* Laila Nur Fardah (202410102018) - System Analyst
-* Nico Wibiyanto (202410102081) - System Designer
-* Benny Ridwan Susanto (202410102015) - Software Developer
-* Laili Alfizah (202410102086) - Software Tester
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
